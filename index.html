@@ -2,25 +2,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Brum Brutos</title>
   <style>
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background-color: #000;
-      color: #f5f5f5;
+      background-color: #fff8f0;
+      color: #3d3d3d;
     }
 
     header {
-      background-color: #000;
       text-align: center;
       padding: 20px;
+      background-color: #fff3e0;
     }
 
     header img {
-      width: 150px;
+      height: 120px;
     }
 
     nav {
@@ -28,53 +28,88 @@
     }
 
     nav a {
-      color: #d4af37;
+      color: #bfa046;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
 
     .banner {
-      background-color: #1a1a1a;
+      background-color: #fff0dc;
       text-align: center;
-      padding: 100px 20px;
+      padding: 60px 20px;
     }
 
     .banner h1 {
-      color: #d4af37;
-      font-size: 2.5em;
+      color: #bfa046;
+      font-size: 2.2em;
       margin: 0;
     }
 
     .section {
-      padding: 60px 20px;
+      padding: 40px 20px;
       text-align: center;
     }
 
     .section h2 {
-      color: #d4af37;
-      margin-bottom: 20px;
+      color: #bfa046;
+      margin-bottom: 30px;
+    }
+
+    .catalogo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .item {
+      background-color: #fff;
+      border: 1px solid #e8d9c1;
+      border-radius: 12px;
+      width: 260px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .item img {
+      width: 100%;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    .item-info {
+      padding: 15px;
+    }
+
+    .item-info h3 {
+      margin: 0;
+      font-size: 1.1em;
+      color: #5a4a2e;
+    }
+
+    .item-info button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #bfa046;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
     }
 
     footer {
-      background-color: #111;
+      background-color: #f9f0e3;
       padding: 20px;
       text-align: center;
-      color: #888;
       font-size: 0.9em;
-    }
-
-    footer a {
-      color: #d4af37;
-      text-decoration: none;
-      margin: 0 10px;
+      color: #776d57;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.jpeg" alt="Logo Brum Brutos">
+    <img src="logo.jpeg" alt="Logo Brum Brutos" />
     <nav>
       <a href="#sobre">Sobre</a>
       <a href="#catalogo">Catálogo</a>
@@ -83,26 +118,76 @@
   </header>
 
   <section class="banner">
-    <h1>Autenticidade em sua forma mais pura</h1>
+    <h1>Joias com alma natural e toque bruto</h1>
   </section>
 
   <section id="sobre" class="section">
     <h2>Sobre a Brum Brutos</h2>
-    <p>Joias em sua forma mais natural, com elegância e originalidade. Cada peça é única, feita com pedras brutas e paixão pelo detalhe.</p>
+    <p>Celebramos a beleza crua das pedras naturais em peças únicas, autênticas e elegantes. Cada joia conta uma história.</p>
   </section>
 
   <section id="catalogo" class="section">
     <h2>Catálogo</h2>
-    <p>Em breve nossa coleção estará disponível aqui.</p>
+    <div class="catalogo">
+      
+    <div class="item">
+      <img src="joia_1.jpg" alt="Joia 1">
+      <div class="item-info">
+        <h3>Joia Bruta 1</h3>
+        <button onclick="window.location.href='https://wa.me/seu_numero'">Comprar</button>
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="joia_2.jpg" alt="Joia 2">
+      <div class="item-info">
+        <h3>Joia Bruta 2</h3>
+        <button onclick="window.location.href='https://wa.me/seu_numero'">Comprar</button>
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="joia_3.jpg" alt="Joia 3">
+      <div class="item-info">
+        <h3>Joia Bruta 3</h3>
+        <button onclick="window.location.href='https://wa.me/seu_numero'">Comprar</button>
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="joia_4.jpg" alt="Joia 4">
+      <div class="item-info">
+        <h3>Joia Bruta 4</h3>
+        <button onclick="window.location.href='https://wa.me/seu_numero'">Comprar</button>
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="joia_5.jpg" alt="Joia 5">
+      <div class="item-info">
+        <h3>Joia Bruta 5</h3>
+        <button onclick="window.location.href='https://wa.me/seu_numero'">Comprar</button>
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="joia_6.jpg" alt="Joia 6">
+      <div class="item-info">
+        <h3>Joia Bruta 6</h3>
+        <button onclick="window.location.href='https://wa.me/seu_numero'">Comprar</button>
+      </div>
+    </div>
+    
+    </div>
   </section>
 
   <section id="contato" class="section">
     <h2>Contato</h2>
-    <p>Fale com a gente pelo <a href="https://wa.me/seunumero" target="_blank">WhatsApp</a> ou no <a href="https://instagram.com/seuusuario" target="_blank">Instagram</a>.</p>
+    <p>Fale conosco pelo <a href="https://wa.me/seu_numero" target="_blank">WhatsApp</a> ou visite nosso <a href="https://instagram.com/seu_usuario" target="_blank">Instagram</a>.</p>
   </section>
 
   <footer>
-    © 2025 Brum Brutos · <a href="#">Termos</a> · <a href="#">Privacidade</a>
+    © 2025 Brum Brutos · Todos os direitos reservados.
   </footer>
 
 </body>
